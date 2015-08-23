@@ -79,12 +79,15 @@ Below procedure is tested in Ubuntu 14.04
 
 ###Installation
 
-   Assume you use ~/Malyzer/Maltelligence as the program folder
+   Assume you use ~/Malyzer/maltelligence as the program folder
 
 ``` sh
    mkdir Malyzer
    cd Malyzer
    git clone git://github.com/maltelligence/maltelligence.git
+   cd maltelligence
+   mkdir log
+   mkdir repo
 ```
 
 ###Configuration
@@ -101,7 +104,7 @@ Below procedure is tested in Ubuntu 14.04
    
 ``` sh
    mysql -u root -p -e "create schema maltelligence default character set utf8"
-   mysql -u root -p maltelligence < ./db/maltelligence_0814.sql
+   mysql -u root -p maltelligence < ./db/maltelligence.sql
 ```
 
 - MalProfile.ini
@@ -204,14 +207,14 @@ TLD=AC,ACADEMY,ACTOR,AD,AE,AERO,AF,AG,AGENCY,AI,AL,AM,AN,AO,AQ,AR,ARPA,AS,ASIA,.
    Put it under the Maltelligence folder ~/Malyzer/Maltelligence/ as
 
 ``` sh
-   ~/Malyzer/Maltelligence/GeoLite2-City.mmdb
+   ~/Malyzer/maltelligence/GeoLite2-City.mmdb
 ```
 
 - Setup the shell to include Maltelligence path at the bottom of .profile file 
 
 ``` sh
    vi ~/.profile
-   export PATH=$PATH:$HOME/Malyzer/Maltelligence
+   export PATH=$PATH:$HOME/Malyzer/maltelligence
 ```
 
 - Database clean up
