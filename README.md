@@ -1,5 +1,5 @@
-<p align="center">#Maltelligence</p>
-<p align="center">###a Malware/Threat Analyst Desktop</p>
+#Maltelligence
+###a Malware/Threat Analyst Desktop
 
 
 ##About
