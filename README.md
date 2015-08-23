@@ -88,6 +88,7 @@ Below procedure is tested in Ubuntu 14.04
    cd maltelligence
    mkdir log
    mkdir repo
+   cd..
 ```
 
 ###Configuration
