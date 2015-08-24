@@ -117,7 +117,7 @@ Below procedure is tested in Ubuntu 14.04
    VT_APIKEY=
 ```
   
-   If you have subscription in [tcpiputils.com](http://www.tcpiputils.com/premium-access) Premium account for AS Number query, 
+   If you have API key in [passivedns.mnemonic.no](http://passivedns.mnemonic.no) for passivedns query, 
 
 ``` sh
    MN_APIKEY=
@@ -136,7 +136,9 @@ Below procedure is tested in Ubuntu 14.04
    VTDEPTH=15
 ```
 
-   If you have subscription in [tcpiputils.com](http://www.tcpiputils.com/premium-access) Premium account, 
+   If you have subcripitons on [tcpiputils.com](http://www.tcpiputils.com/premium-access) Premium account for AS Numebr query,
+   use firefox to signin to the website with your acocunt, then copy the cookie.sqlite file from firefox under Maltelligence 
+   folder then setup the below parameter.  
 
 ``` sh 
    ASN=True
