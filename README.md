@@ -136,7 +136,7 @@ Below procedure is tested in Ubuntu 14.04
    VTDEPTH=15
 ```
 
-   If you have subcripitons on [tcpiputils.com](http://www.tcpiputils.com/premium-access) Premium account for AS Numebr query,
+   If you have subcripitons on [tcpiputils.com](http://www.tcpiputils.com/premium-access) Premium account for AS Number query,
    use firefox to signin to the website with your acocunt, then copy the cookie.sqlite file from firefox under Maltelligence 
    folder then setup the below parameter.  
 
