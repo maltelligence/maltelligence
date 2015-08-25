@@ -1,29 +1,10 @@
 #!/usr/bin/python
 # Name: Maltelligence.py
-# Version: 0.91
-# By:   Maltelligence Research Group
+# By:   Frankie Li
 # Created:  Dec 25, 2014
 # Modified: Aug 13, 2015
 # Function: a caller script for Maltelligence Tool from bash shell
-#
-#    Copyright (c), 2015 Maltelligence Group
-#
-#    This file is part of Maltelligence.
-#
-#    Maltelligence is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU General Public License as published by
-#    the Free Software Foundation, either version 3 of the License, or
-#    (at your option) any later version.
-#
-#    Maltelligence is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU General Public License for more details.
-#
-#    You should have received a copy of the GNU General Public License
-#    along with Maltelligence.  If not, see <http://www.gnu.org/licenses/>.
-#
-
+# See the file 'LICENSE' for copying permission.
 
 from utils.config import *
 from utils.utility import *
@@ -427,8 +408,12 @@ def main():
                             logging.info(msg)
                             d.updatePair(domain, ip, args.tag, args.tlp, monitoring_code)
 
-                            #   find sample_id
-                            sample_id = d.findSample_id(hashs)
+                            if not os.path.exists(destination_file):
+                                sample_id = 0
+                            else:
+                                #   find sample_id
+                                sample_id = d.findSample_id(hashs)
+                            
                             #   find dns_id
                             dns_id = d.findDns_id(domain, ip)
                             #   find domain_id

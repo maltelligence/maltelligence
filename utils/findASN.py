@@ -1,30 +1,11 @@
 # encoding: utf-8
 #!/usr/bin/python
 # Name: findASN.py
-# Version: 0.91
-# By: Maltelligence Research Group
+# By: Frankie Li
 # Created:  Jan 5, 2015
 # Modified: Aug 11, 2015
 # Function: parsing data from  http://www.tcpiputils.com with functions of parseASN & parseSubnet
-#
-#    Copyright (c), 2015 Maltelligence Group
-#
-#    This file is part of Maltelligence.
-#
-#    Maltelligence is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU General Public License as published by
-#    the Free Software Foundation, either version 3 of the License, or
-#    (at your option) any later version.
-#
-#    Maltelligence is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU General Public License for more details.
-#
-#    You should have received a copy of the GNU General Public License
-#    along with Maltelligence.  If not, see <http://www.gnu.org/licenses/>.
-#
-
+# See the file 'LICENSE' for copying permission
 
 import sqlite3
 import cookielib
@@ -190,7 +171,7 @@ def parseASN(country):
 
 def parseSubnet(asn):
 
-    if type(asn) == str and asn != 0:
+    if type(asn) == str and asn != '':
         asn = int(asn)
 
     try:
